@@ -14,4 +14,7 @@ _"A Trybe é uma escola do futuro para qualquer pessoa que queira melhorar de vi
 - [ ] 2-5: _Projeto - Lessons Learned_
 
 ######DIA 01:
-O objetivos dos exercícios é...
+O objetivos dos exercícios é:
+- entender a estrutura cliente-servidor
+- entender a estrutura da internet
+- como funciona HTML e suas tags
