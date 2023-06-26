@@ -1,5 +1,15 @@
-"homepage": "https://username.github.io/app-toot-name",
-"scripts": {
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d build",
-},
+{
+    "name": "Portfolio",
+    "version": "1.0.0",
+    "description": "Meu Portfolio",
+    "main": "index.js",
+    "author": "Paula Piva",
+    "homepage": "https://username.github.io/app-toot-name",
+    "scripts": {
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build"
+    },
+    "dependencies": {
+        "gh-pages": "^5.0.0"
+    }
+}
