@@ -6,11 +6,10 @@
 }
 body {
   background-color: rgb(253, 251, 251);
-  margin-left: 10px ;
-  margin-right: 10px;
+  margin-left: 5px;
   }
   
-#cabecalho {
+#cabecalho{
   background: darkgreen;
   position: fixed;
   top: 0;
@@ -29,33 +28,27 @@ body {
 
 #aboutme{
   background-color: rgb(110, 187, 100);
-  margin-left: 10px;
-  margin-top: 50px;
-  
+  margin-top: 90px;
+  height: 150px;
+  padding-top: 5px;
 }
+
 #aboutme h2, #aboutme p{
   position: relative;
-  display: inline-block;
-  margin-left: 10px;
+  display: inline-flow;
+  margin-left: 120px;
+  
 }
 #aboutme img{
-  position: relative;
+  position: absolute;
   float:left;
   margin-left: 5px;
-  margin-top: 5px;
   padding: 3px;
   background-color: blueviolet;
   
 }
-
-.container {
-  margin-top: 300px;
-  height: 150px;
-}
-
   
 .titulo {
-  margin-top: 10px;
   font-size: 20px;
   text-align: left;
   color: rgb(119, 23, 23);
@@ -63,20 +56,22 @@ body {
 }
 
 .container .titulo{
-  margin-top: 50px;
+  margin-top: 15px;
 }
+
 .textos{
-  height: 320px;
+  height: 420px;
   overflow-y: auto;
   line-height: 170%;
 }
 
-footer{
+#rodape{
 position: fixed;
 left: 0;
 bottom: 0px;
-height: 15%;
+height: 10%;
 width: 100%; 
+margin-left: 5px;
 }
 
 ul li:nth-child(odd){
