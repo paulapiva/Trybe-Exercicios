@@ -27,7 +27,7 @@ body {
 }
 
 #aboutme{
-  background-color: rgb(110, 187, 100);
+  background-color: rgb(229, 245, 226);
   margin-top: 90px;
   height: 150px;
   padding-top: 5px;
@@ -37,9 +37,11 @@ body {
   position: relative;
   display: inline-flow;
   margin-left: 120px;
-  
+
 }
+
 #aboutme img{
+  top: 105px;;
   position: absolute;
   float:left;
   margin-left: 5px;
@@ -72,13 +74,14 @@ bottom: 0px;
 height: 10%;
 width: 100%; 
 margin-left: 5px;
+background-color: rgb(229, 245, 226);
 }
-
+/* 
 ul li:nth-child(odd){
-  color:rgb(224, 11, 224)
-}
+  background-color:rgb(224, 11, 224)
+} */
 
-div.textos h3 p:nth-child(odd) {
-color:chartreuse;
+.textos > p:nth-child(odd) {
+font-style: italic;
 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
