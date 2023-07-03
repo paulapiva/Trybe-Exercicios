@@ -1,65 +1,84 @@
 *{
-    margin: 0;
-    padding: 0;
-    font-family: Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  
 }
 body {
-    background-color: rgb(253, 251, 251);
-    margin-left: 10px ;
-    margin-right: 10px;
+  background-color: rgb(253, 251, 251);
+  margin-left: 5px;
   }
   
-#cabecalho {
-    background: darkgreen;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 80px;
-    width: 100%;
-    border-bottom: 5px double black;
+#cabecalho{
+  background: darkgreen;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  width: 100%;
+  border-bottom: 5px double black;
   }
 
 #cabecalho h1{
-    text-align: center;
-    color: white;
+  text-align: center;
+  color: white;
+  padding-top: 20px;
 }
 
-.container {
-    margin-top: 85px;
-    height: 150px;
+#aboutme{
+  background-color: rgb(110, 187, 100);
+  margin-top: 90px;
+  height: 150px;
+  padding-top: 5px;
 }
 
-.caixa{
-    background-color:rgb(241, 239, 239);
-    display: inline-block;
-    padding: 5px;
-    
+#aboutme h2, #aboutme p{
+  position: relative;
+  display: inline-flow;
+  margin-left: 120px;
+  
+}
+#aboutme img{
+  position: absolute;
+  float:left;
+  margin-left: 5px;
+  padding: 3px;
+  background-color: blueviolet;
+  
 }
   
 .titulo {
-    margin-top: 10px;
-    font-size: 20px;
-    text-align: left;
-    color: rgb(119, 23, 23);
-    text-decoration:underline;
-  }
+  font-size: 20px;
+  text-align: left;
+  color: rgb(119, 23, 23);
+  text-decoration:underline;
+}
+
+.container .titulo{
+  margin-top: 15px;
+}
 
 .textos{
-    
-    height: 340px;
-    overflow-y: auto;
-
+  height: 420px;
+  overflow-y: auto;
+  line-height: 170%;
 }
 
-footer{
-  position: fixed;
-  left: 0;
-  bottom: 0px;
-  height: 15%;
-  width: 100%; 
+#rodape{
+position: fixed;
+left: 0;
+bottom: 0px;
+height: 10%;
+width: 100%; 
+margin-left: 5px;
 }
+
+ul li:nth-child(odd){
+  color:rgb(224, 11, 224)
+}
+
 div.textos h3 p:nth-child(odd) {
-  color:chartreuse;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+color:chartreuse;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
