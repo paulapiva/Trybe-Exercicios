@@ -1,56 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <!--
-    <main id="parent-of-parent">
-        <section id="parent">
-          <section id="first-child"></section>
-          <section id="where-are-you">
-            <section id="first-child-of-child"></section>
-          </section>
-          Attention!!!
-          <section id="third-child"></section>
-          <section id="fourth-and-last-child"></section>
-        </section>
-      </main>
-  
-  <main id="paiDoPai">
-    <section id="pai">
-      <section id="primeiroFilho"></section>
-      <section id="elementoOndeVoceEsta">
-        <section id="primeiroFilhoDoFilho"></section>
-        <section id="segundoEUltimoFilhoDoFilho"></section>
-      </section>
-      Atenção!
-      <section id="terceiroFilho"></section>
-      <section id="quartoEUltimoFilho"></section>
-    </section>
-  </main>
-  --> 
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
 
-  <main id="father-of-father">
-    <section id="parent">
-      <section id="first-child">
-        <h2>Primeiro Filho</h2>
-      </section>
-      <section id="where-are-you">
-        <h2>Elemento que você deve remover</h2>
-      </section>
-      <section id="third-child">
-        <h2>Terceiro Filho</h2>
-      </section>
-      <section id="quartoEUltimoFilho">
-        <h2>Quarto Filho</h2>
-      </section>    
-    </section>
-  </main>
+      .title {
+        text-align: center;
+      }
 
-  <script src="script.js"></script>
-</body>
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="script.js"></script>
+  </body>
 </html>

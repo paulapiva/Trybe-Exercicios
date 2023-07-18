@@ -1,62 +1,56 @@
-/*
-Acesse o elemento where-are-you.
-Acesse parent a partir de where-are-you e adicione uma color a ele.
-Acesse o first-child-of-child e adicione um texto a ele. Você se lembra dos vídeos da aula anterior? Eles ensinam como fazer isso.
-Acesse o first-child a partir de parent.
-Acesse o first-child a partir de where-are-you.
-Acesse o texto Attention! a partir de where-are-you.
-Acesse o third-child a partir de where-are-you.
-Acesse o third-child a partir de parent.
+let tagh1 = document.createElement('h1');
+tagh1.innerText = 'TrybeTrip - Agência de Viagens'
+tagh1.className = 'title'
+document.body.appendChild(tagh1)
 
+let princip = document.createElement('main')
+princip.className = 'main-content'
+document.body.appendChild(princip)
 
-const whereAreYou = document.getElementById('where-are-you');
+let secao = document.createElement('section')
+secao.className = 'center-content'
+princip.appendChild(secao)
 
-const parent = whereAreYou.parentElement;
-parent.style.color = 'blue';
+let parag = document.createElement('p')
+parag.innerText = "Conheça o mundo"
+secao.appendChild(parag)
 
-const neto = whereAreYou.firstElementChild
-neto.innerText = "primeiro neto"
+let esquerda = document.createElement('section')
+esquerda.className = "left-content"
+princip.appendChild(esquerda)
 
-const parentNeto = parent.firstElementChild;
+let direita = document.createElement('section')
+direita.className = "right-content"
+princip.appendChild(direita)
 
-const parent2 = whereAreYou.previousElementSibling
+let foto = document.createElement('img')
+foto.src = 'https://picsum.photos/200'
+foto.className = 'small-image'
+esquerda.appendChild(foto)
 
-const atencao = whereAreYou.nextSibling
+let contar = document.createElement('ul')
+let num=['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez']
+for(let index=0; index < num.length; index += 1){
+    let lista = document.createElement('li')
+    lista.innerText = num[index]
+    contar.appendChild(lista)
+}
+direita.appendChild(contar)
 
-const terceiro = whereAreYou.nextElementSibling
+for(let index=0; index < 3; index += 1){
+    let tagh3 = document.createElement('h3');
+    tagh3.innerText = index
+    tagh3.className = 'description'
+    princip.appendChild(tagh3)
+}
 
-const terceiroPai = parent.lastElementChild.previousElementSibling;
+princip.removeChild(esquerda)
+ 
+let direitaCentro = document.getElementsByClassName('right-content')[0]
+direitaCentro.style.marginRight = 'auto'
 
-console.log(terceiroPai);
- */
+let secaoCentro = document.getElementsByClassName('center-content')[0]
+secaoCentro.parentNode.style.backgroundColor = 'lightgreen'
 
-
-/*
-Crie um irmão para elementoOndeVoceEsta.
-Crie um filho para elementoOndeVoceEsta.
-Crie um filho para primeiroFilhoDoFilho.
-A partir desse filho criado, acesse terceiroFilho.
-
-
-const pai = document.getElementById('pai')
-
-const irmao = document.createElement('section')
-irmao.id = 'irmao-de-onde'
-pai.appendChild(irmao)
-
-const onde = document.getElementById("elementoOndeVoceEsta")
-const filho = document.createElement('section')
-filho.id = 'filho-de-onde'
-onde.appendChild(filho)
-
-const filhoDoFilho = document.getElementById("primeiroFilhoDoFilho")
-const oneNeto = document.createElement('section')
-oneNeto.id = 'filho-do-filho-eh-neto'
-filhoDoFilho.appendChild(oneNeto)
-
-const terceiro = oneNeto.parentElement.parentElement.nextElementSibling
-
- */
-
-const oPai = document.getElementById('where-are-you')
-oPai.removeChild(oPai.firstElementChild);
+contar.lastChild.remove();
+contar.lastChild.remove();
