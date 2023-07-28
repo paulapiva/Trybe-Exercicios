@@ -33,10 +33,8 @@ const school = {
   Crie uma função para alterar o turno para noite no curso de Python. Essa função deve ter três parâmetros: a base de dados a ser modificada, o nome do curso e o novo valor da chave.
   */
 
-const posicaoArray = (obj, posicao) => {
-  
-}
-
+const posicaoArray = (obj, posicao) => Object.values(obj, [posicao])
+//console.log(posicaoArray(school,0));
 
 const somaEstudantes = () => {
   let somatorio=0
@@ -44,6 +42,29 @@ const somaEstudantes = () => {
     somatorio = somatorio + school.lessons[i].students
 
   }
-  console.log(somatorio);
+ // console.log(somatorio);
 }
 somaEstudantes ()
+
+const verificaValor = (objeto, chave) => {
+  for(let i = 0; i < objeto.lessons.length; i++){
+    if (objeto.lessons[i][chave] === undefined) {
+      return false;
+    }
+    return true;
+
+  }
+}
+console.log(verificaValor(school, 'professor'));
+
+
+// const mudaTurno = (dados, curso, chave) => {
+//   for(let i = 0; i < dados.lessons.length; i++){
+//     if (dados.lessons[i][course] === curso) {
+//       lessons.shift = dados.lessons[i]
+//     }
+//   }
+// }
+// console.log(mudaTurno(school, 'Python', 'Noite'));
+
+//DESISTO
